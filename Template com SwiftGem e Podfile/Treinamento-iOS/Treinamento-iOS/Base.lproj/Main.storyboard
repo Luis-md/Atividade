@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Treinamento_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hmw-Tp-5wT">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmK-yx-exC">
+                                <rect key="frame" x="16" y="85" width="343" height="30"/>
+                                <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <action selector="confirmar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fb7-Gd-tGH"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dG2-XI-u6l">
+                                <rect key="frame" x="0.0" y="131" width="375" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xmK-yx-exC" firstAttribute="centerX" secondItem="Hmw-Tp-5wT" secondAttribute="centerX" id="3QG-aP-G3B"/>
+                            <constraint firstItem="xmK-yx-exC" firstAttribute="leading" secondItem="Hmw-Tp-5wT" secondAttribute="leading" id="5C7-ao-2Ox"/>
+                            <constraint firstItem="xmK-yx-exC" firstAttribute="trailing" secondItem="Hmw-Tp-5wT" secondAttribute="trailing" id="Rjz-o0-2fh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dG2-XI-u6l" secondAttribute="trailing" id="Yir-eD-9Vf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hmw-Tp-5wT" secondAttribute="trailing" constant="16" id="YvR-UB-eUd"/>
+                            <constraint firstItem="Hmw-Tp-5wT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="cIp-Xc-T0t"/>
+                            <constraint firstItem="Hmw-Tp-5wT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ekm-Sq-uSV"/>
+                            <constraint firstItem="xmK-yx-exC" firstAttribute="top" secondItem="Hmw-Tp-5wT" secondAttribute="bottom" constant="19" id="j2p-l7-ip8"/>
+                            <constraint firstItem="dG2-XI-u6l" firstAttribute="top" secondItem="xmK-yx-exC" secondAttribute="bottom" constant="16" id="tNA-sy-ABf"/>
+                            <constraint firstItem="dG2-XI-u6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xNm-DE-wfT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dG2-XI-u6l" secondAttribute="bottom" id="zV5-iZ-Hmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dG2-XI-u6l" id="X6B-PL-G7d"/>
+                        <outlet property="textField" destination="Hmw-Tp-5wT" id="VR6-3M-V1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
